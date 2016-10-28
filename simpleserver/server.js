@@ -1,6 +1,18 @@
+// Require modules
+
 var http = require('http');
-http.createServer(function(req, res){
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end('Hello World\n');
-}).listen(1337, '0.0.0.0');
-console.log('Server is running at http://localhost:1337/');
+var url = require('url');
+var path = require('path');
+var fs = require('fs');
+
+// Array of Mime types
+// MIME = Multi-Purpose Internet Mail Extensions
+
+var mimeTypes = {
+	"html": "text/html", 
+	"jpeg": "image/jpeg", 
+	"jpg": "image/jpeg", 
+	"png": "image/png", 
+	"js": "text/javascript", 
+	"css": "text/css"
+};

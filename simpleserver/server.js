@@ -1,18 +1,13 @@
-// Require modules
+// require modules
 
 var http = require('http');
-var url = require('url');
 var path = require('path');
+var url = require('url');
 var fs = require('fs');
 
-// Array of Mime types
-// MIME = Multi-Purpose Internet Mail Extensions
+// mime types
+// mime = multi-purpose internet mail extensions
 
 var mimeTypes = {
-	"html": "text/html", 
-	"jpeg": "image/jpeg", 
-	"jpg": "image/jpeg", 
-	"png": "image/png", 
-	"js": "text/javascript", 
-	"css": "text/css"
+    
 };
